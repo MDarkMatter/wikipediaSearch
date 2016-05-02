@@ -19,19 +19,11 @@ function getWiki(entry) {
         },
         success: function(data) {
 
+            $('.results').empty();
+
             for (var i = 0; i < data[1].length; i++) {
 
                 $('<a href=' + data[3][i] + '><div class="returnResults well"><h3>' + data[1][i] + '</h3><p>' + data[2][i] + '</p></div></a>').appendTo('.results');
-
-                // $('<div/>', {
-                //     "class": 'returnResults',
-                // }).appendTo('.results');
-                //
-                // $('<a/>', {
-                //     href: data[3][i],
-                //     text: data[1][i]
-                // }).appendTo('.returnResults');
-
 
             }
         }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,38 +10,43 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" charset="utf-8">
 
 
-  </head>
-  <body>
+</head>
+
+<body>
     <div class='container-fluid text-center'>
 
-      <div class="row">
-        <h1>Wikipedia Viewer</h1>
-      </div>
+        <div class="row">
+            <h1 class="well">Wikipedia Viewer</h1>
+        </div>
 
-      <div class="row">
-        <div class="col-sm-4 col-sm-offset-4">
-          <div class="input-group">
-            <input id='wikiSearch' type="text" class="form-control" placeholder="Search for...">
-            <span class="input-group-btn">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="input-group">
+                    <input id='wikiSearch' type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
               <button id='submitButton' class="btn btn-primary" type="button">Search</button>
             </span>
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="row">
-        <a href='https://en.wikipedia.org/wiki/Special:Random' target='_blank'>
-          <button type="button" class="btn btn-default">
-            Take me to a Random Article!!
-          </button>
-        </a>
-      </div>
+        <div class="row">
+            <a href='https://en.wikipedia.org/wiki/Special:Random' target='_blank'>
+                <button type="button" class="btn btn-default">
+                    Take me to a Random Article!!
+                </button>
+            </a>
+        </div>
 
-      <div class="results">
-        <h1 id='h1display'></h1>
-      </div>
+        <div class="container col-sm-6 col-sm-offset-3">
+            <div class="row">
+                <div class="results"></div>
+            </div>
+        </div>
+
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -50,5 +56,6 @@
 
 
 
-  </body>
+</body>
+
 </html>
