@@ -18,8 +18,20 @@ function getWiki(entry) {
             format: "json"
         },
         success: function(data) {
+
             for (var i = 0; i < data[1].length; i++) {
-                $('.results').append('<div class"return"><a href="' + data[3][i] + '">' + data[1][i] + "</a></div>");
+
+                $('<a href=' + data[3][i] + '><div class="returnResults well"><h3>' + data[1][i] + '</h3><p>' + data[2][i] + '</p></div></a>').appendTo('.results');
+
+                // $('<div/>', {
+                //     "class": 'returnResults',
+                // }).appendTo('.results');
+                //
+                // $('<a/>', {
+                //     href: data[3][i],
+                //     text: data[1][i]
+                // }).appendTo('.returnResults');
+
 
             }
         }
